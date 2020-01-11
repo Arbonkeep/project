@@ -14,8 +14,8 @@ public class Data {
 
     //为对应的设备赋予id
     public static final int PC = 21;
-    public static final int NOTEBOOK = 21;
-    public static final int PRINTER = 21;
+    public static final int NOTEBOOK = 22;
+    public static final int PRINTER = 23;
 
     //Employee  :  10, id, name, age, salary
     //Programmer:  11, id, name, age, salary
