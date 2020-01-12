@@ -13,37 +13,37 @@ public class TSUtility {
 
     //读取键盘输入的方法
     private static String readKeyBoard(int limit, boolean blankReturn) {
-        String str = "";
+        String line = "";
 
         while (sc.hasNextLine()) {
-            str = sc.nextLine();
-            if (str.length() == 0) {
-                if (blankReturn ) return str;
+            line = sc.nextLine();
+            if (line.length() == 0) {
+                if (blankReturn) return line;
                 else continue;
             }
 
-            if (str.length() < 1 || str.length() > limit) {
-                System.out.println("输入长度不能大于 " + limit + ",请重新输入:");
+            if (line.length() < 1 || line.length() > limit) {
+                System.out.print("输入长度（不大于" + limit + "）错误，请重新输入：");
                 continue;
             }
             break;
         }
 
-        return str;
+        return line;
     }
 
     //读取菜单选项的方法
     public static char readMenuSelection() {
-        char c ;
-        while (true) {
-            String str  = readKeyBoard(1, false);
+        char c;
+        for (; ; ) {
+            String str = readKeyBoard(1, false);
             c = str.charAt(0);
-            if (c != '1' && c != '2' && c != '3' && c != '4') {
-                System.out.println("输入有误，请重新输入:");
+            if (c != '1' && c != '2' &&
+                    c != '3' && c != '4') {
+                System.out.print("选择错误，请重新输入：");
             } else break;
         }
-
-        return 'c';
+        return c;
     }
 
     //读取返回的方法

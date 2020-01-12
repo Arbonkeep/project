@@ -10,7 +10,7 @@ public class Data {
     public static final int EMPLOYEE = 10;
     public static final int PROGRAMMER = 11;
     public static final int DESIGNER = 12;
-    public static final int ARCGITECT = 13;
+    public static final int ARCHGITECT = 13;
 
     //为对应的设备赋予id
     public static final int PC = 21;

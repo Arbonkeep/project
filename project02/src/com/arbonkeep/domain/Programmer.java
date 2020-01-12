@@ -47,7 +47,7 @@ public class Programmer extends Employee{
 
     //此方法获取代表程序员id以及父类employee详细描述
     public String getMemberDetails() {
-        return getMemberId() + getDetails();
+        return getMemberId() + "/" + getDetails();
     }
 
     public String getDetailsForTeam() {
@@ -56,6 +56,6 @@ public class Programmer extends Employee{
 
     @Override
     public String toString() {
-        return getDetails() + "/t程序员\t" + status + "\t\t" + equipment.getDescription();
+        return getDetails() + "\t程序员\t" + status + "\t\t\t" + equipment.getDescription();
     }
 }
